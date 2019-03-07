@@ -1,0 +1,24 @@
+Scene1:
+- Camera fixed on the Hero Carrier Ship with Boid & Path Finding Behaviour and slow movement speed.
+- A set of Ships will fly from behind and over the Carrier Ship, towards the camera, again using the Boid & Path Finding Behaviour, medium speed.
+
+Transitions...
+
+Scene2:
+- Camera follows the main Hero crew into the battlefield where the fight between 2 sides are going on. A set of ships will have Boid, Offset Pursue, Wandering and Shooting Behaviours.
+- The crew start splitting off to follow their own targets, firing lazers as they get close. The ships will have Boid, Offset Pursue, Seeking, Flee & Shooting Behaviours.
+- Camera will follow one of the ship, showing it pursuing an enemy ship in red, shooting it and destroy it after some time. 
+
+Transitions...
+
+Scene3:
+- Showing Enemy Troops retreating, going into a warp while there's some explosion surrounding the area. Simply just some Path Following or Arrive Behaviour and a portal/warp VFX at the end before destroying the gameObject.
+
+Transitions...
+
+Scene4:
+- The remaining Enemy Troop reappearing just to meet with another Hero troop. Arrive Behaviour.
+- Hero Mothership fire a beam at the enemy troop, destroying all of them. VFX with Shooting behaviour.
+- Fade to black.
+
+-END-
