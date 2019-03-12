@@ -1,6 +1,6 @@
 Scene1:
-- Camera fixed on the Hero Carrier Ship with Boid & Path Finding Behaviour and slow movement speed.
-- A set of Ships will fly from behind and over the Carrier Ship, towards the camera, again using the Boid & Path Finding Behaviour, medium speed.
+- Camera is fixed on the Hero Carrier Ship that slowly move foward using Boid & Path Finding Behaviour scripts.
+- 3-5 Hero Fighter Ships will fly from behind and over the Carrier Ship towards the camera, again using the Boid & Path Finding Behaviour, medium speed.
 
 Transitions...
 
