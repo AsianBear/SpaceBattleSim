@@ -1,30 +1,30 @@
-Scene1:
-- Camera is fixed on the Hero Carrier Ship that slowly move foward using Boid & Path Finding Behaviour scripts.
-- 3-5 Hero Fighter Ships will fly from behind and over the Carrier Ship towards the camera, again using the Boid & Path Finding Behaviour, medium speed.
+Scene 1:
+- Camera is fixed on the Hero Carrier Ship that slowly move forward using Boid & Pathfinding Behaviour scripts.
+- 3-5 Hero Fighter Ships will fly from behind and over the Carrier Ship towards the camera, using the Boid & Path Finding Behaviour as well.
 
 Transitions...
 
-Scene2:
+Scene 2:
 - Camera follows the main Hero Fighter Ships into the battlefield where mass battle is happening between the Hero and the Enemy factions. A set of ships will have Boid, Offset Pursue, Wandering and Shooting Behaviours while some will only have Path Following and Obstacle Avoidance.
-- The ships will start splitting off to follow their own targets, firing lazers as they get close. The ships will have Boid, Offset Pursue, Seeking, Obstacle Avoidance, Flee & Shooting Behaviours.
-- Camera will follow one of the ship, showing it pursuing an enemy ship in red, shooting it and destroy it after a certain amount of time.
+- The ships will start splitting off to follow their own targets, firing lasers as they get close. The ships will have Boid, Offset Pursue, Seeking, Obstacle Avoidance, Flee & Shooting Behaviours.
+- Camera will follow one of the ship, showing it pursuing an enemy ship, shooting it and destroy it after a certain amount of time.
 
 Transitions...
 
-Scene3:
-- Camera is being focused on the Enemy troops, showing that their number dwindling by the Hero's troop's attack. (Combination of previous Scene Behaviours with added VFX and ships being continueously destroy one after another)
+Scene 3:
+- Camera is focus on the Enemy troops, showing their number decreasing from the Hero's troop's attack. (Combination of previous Scene Behaviours, eg. Path Following, Shooting, Offset Pursue, etc., with added VFX and ships being continuously destroy one after another)
 
-Scene4:
-- Camera showing Enemy Troops retreating, going into a warp/hyper space while there's some explosion surrounding the area. Simply just some Path Following or Arrive Behaviour and a portal/warp VFX at the end before destroying the gameObject.
+Scene 4:
+- Camera showing Enemy Troops retreating, going into a warp/hyperspace while there's some explosion surrounding the area. Simply just some Path Following or Arrive Behaviour and a portal/wormhole VFX at the end.
 
 Transitions...
 
-Scene5:
-- The remaining Enemy Troop reappearing just to meet with another Hero troop. Arrive Behaviour.
+Scene 5:
+- The remaining Enemy Troop reappearing just to meet with another Hero troop. (Arrive Behaviour after portal/wormhole VFX is played and then some Path Following.)
 - Hero Mothership fire a beam at the enemy troop, destroying all of them. VFX with Shooting behaviour.
 - Fade to black.
 
-Scene6?:
-- May have a cliffhanger showing a different kind of enemies slowly coming into view from the bottom of hte camera, heading towards the Hero home base.
+Scene 6:
+- May have a cliffhanger, Camera showing a multiple Enemy Troops slowly coming into view from the bottom of the camera, heading towards the Hero homebase.
 
 -END-
