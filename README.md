@@ -1,5 +1,5 @@
 # SpaceBattleSim
-A repo for GE2 project. An original creation of a Sci-Fi spaceship battle sequence.
+A repo for GE2 project. A creation of a Sci-Fi spaceship battle sequence.
 
 ## Storyboard:
 Scene 1:
