@@ -8,7 +8,6 @@ Scene 1:
 
 ![DiagramOnly1](https://user-images.githubusercontent.com/26767832/54529185-05dfce00-4977-11e9-99f2-a773b34c9e85.jpg)
 
-Scene2:
 Transitions...
 
 Scene 2:
@@ -25,6 +24,8 @@ Scene 3:
 
 ![DiagramOnly3](https://user-images.githubusercontent.com/26767832/54529240-39baf380-4977-11e9-80b2-b8a7b940a371.jpg)
 
+Transitions...
+
 Scene 4:
 - Camera showing Enemy Troops retreating, going into a warp/hyperspace while there's some explosion surrounding the area. Simply just some Path Following or Arrive Behaviour and a portal/wormhole VFX at the end.
 
@@ -38,6 +39,8 @@ Scene 5:
 - Fade to black.
 
 ![DiagramOnly5](https://user-images.githubusercontent.com/26767832/54529271-4ccdc380-4977-11e9-92a3-e67f354cbaef.jpg)
+
+Transitions...
 
 Scene 6:
 - May have a cliffhanger, Camera showing a multiple Enemy Troops slowly coming into view from the bottom of the camera, heading towards the Hero homebase.
