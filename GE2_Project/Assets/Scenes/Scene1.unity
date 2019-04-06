@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.009786535, g: 0.05188808, b: 0.1522932, a: 1}
+  m_IndirectSpecularColor: {r: 0.009783041, g: 0.051865704, b: 0.15223715, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -247,7 +247,7 @@ MonoBehaviour:
   mass: 1
   damping: 0.01
   banking: 0.1
-  maxSpeed: 5
+  maxSpeed: 7.5
   maxForce: 10
 --- !u!1 &170076733
 GameObject:
@@ -446,7 +446,7 @@ MonoBehaviour:
   mass: 1
   damping: 0.01
   banking: 0.1
-  maxSpeed: 2
+  maxSpeed: 5
   maxForce: 5
 --- !u!1001 &390100019
 PrefabInstance:
@@ -596,7 +596,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -736,7 +736,7 @@ MonoBehaviour:
   mass: 1
   damping: 0.01
   banking: 0.1
-  maxSpeed: 5
+  maxSpeed: 7.5
   maxForce: 10
 --- !u!114 &628366460
 MonoBehaviour:
@@ -876,7 +876,7 @@ MonoBehaviour:
   mass: 1
   damping: 0.01
   banking: 0.1
-  maxSpeed: 5
+  maxSpeed: 7.5
   maxForce: 10
 --- !u!1 &765272395
 GameObject:
@@ -1068,7 +1068,7 @@ MonoBehaviour:
   mass: 1
   damping: 0.01
   banking: 0.1
-  maxSpeed: 5
+  maxSpeed: 7.5
   maxForce: 10
 --- !u!114 &1342673443
 MonoBehaviour:
@@ -1156,7 +1156,7 @@ MonoBehaviour:
   mass: 1
   damping: 0.01
   banking: 0.1
-  maxSpeed: 5
+  maxSpeed: 7.5
   maxForce: 10
 --- !u!1001 &1521613596
 PrefabInstance:
