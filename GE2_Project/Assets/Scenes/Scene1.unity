@@ -845,7 +845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   next: 0
-  looped: 1
+  looped: 0
 --- !u!4 &629018402
 Transform:
   m_ObjectHideFlags: 0
