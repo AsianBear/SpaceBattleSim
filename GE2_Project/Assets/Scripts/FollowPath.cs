@@ -33,7 +33,7 @@ public class FollowPath : SteeringBehaviour {
 
         if (!path.looped && path.IsLast())
         {
-            return boid.ArriveForce(nextWaypoint, 20);
+            return boid.ArriveForce(nextWaypoint, 10);
         }
         else
         {
