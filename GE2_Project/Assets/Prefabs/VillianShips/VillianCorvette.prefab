@@ -162,8 +162,8 @@ GameObject:
   - component: {fileID: 7675560313843867002}
   - component: {fileID: 3504557681079075896}
   - component: {fileID: 4494640643069421018}
-  - component: {fileID: 5633175802807625330}
   - component: {fileID: 4948721780085360647}
+  - component: {fileID: 3637016516699214264}
   m_Layer: 0
   m_Name: VillianCorvette
   m_TagString: Enemy
@@ -224,22 +224,6 @@ MonoBehaviour:
   banking: 0.1
   maxSpeed: 10
   maxForce: 20
---- !u!114 &5633175802807625330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7675560313843368282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41d2b7d30a8a78b4bb80e463581eabd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 1
-  force: {x: 0, y: 0, z: 0}
-  boid: {fileID: 0}
-  leader: {fileID: 0}
 --- !u!114 &4948721780085360647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +237,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
+--- !u!114 &3637016516699214264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7675560313843368282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf414458137c0f49aee26c9abdaf823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  scale: 4
+  forwardFeelerDepth: 30
+  sideFeelerDepth: 15
+  frontFeelerUpdatesPerSecond: 10
+  sideFeelerUpdatesPerSecond: 5
+  feelerRadius: 2
+  forceType: 0
+  mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &7675560313843368284
 GameObject:
   m_ObjectHideFlags: 0

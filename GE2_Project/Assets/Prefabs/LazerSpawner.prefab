@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7424128016254240614}
   - component: {fileID: 7424128016254240613}
+  - component: {fileID: 3054776129910474020}
   m_Layer: 0
   m_Name: LazerSpawner
   m_TagString: Untagged
@@ -38,7 +39,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7424128016254240615}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54162549ee5abf648bcc46f814308af9, type: 3}
   m_Name: 
@@ -49,3 +50,28 @@ MonoBehaviour:
     type: 3}
   force: 2000
   rayLength: 25
+  nameTag: 
+--- !u!114 &3054776129910474020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7424128016254240615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c4dbac93510644bb2573592d23f22a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeBtwShots: 0.5
+  numberOfShots: 3
+  projectile: {fileID: 5620856151635040550, guid: 8b37197eb921f7443b045009f86317b8,
+    type: 3}
+  force: 3000
+  rayLength: 0
+  nameTag: 
+  radius: 5
+  maxDistance: 30
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295

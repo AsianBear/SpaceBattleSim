@@ -192,8 +192,9 @@ GameObject:
   - component: {fileID: 8768704760075145652}
   - component: {fileID: 3767487031517803664}
   - component: {fileID: 8166043296168569566}
-  - component: {fileID: 3659012584242391219}
   - component: {fileID: 5594995606244702508}
+  - component: {fileID: 3012754510288796475}
+  - component: {fileID: 5108689977115496656}
   m_Layer: 0
   m_Name: VillianFrigate
   m_TagString: Enemy
@@ -255,22 +256,6 @@ MonoBehaviour:
   banking: 0.1
   maxSpeed: 10
   maxForce: 20
---- !u!114 &3659012584242391219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8768704760074849684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41d2b7d30a8a78b4bb80e463581eabd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 1
-  force: {x: 0, y: 0, z: 0}
-  boid: {fileID: 0}
-  leader: {fileID: 0}
 --- !u!114 &5594995606244702508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,6 +269,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 30
+--- !u!114 &3012754510288796475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8768704760074849684}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a2c0bcf33ddd54f8f08233f492f579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  target: {fileID: 0}
+--- !u!114 &5108689977115496656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8768704760074849684}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27f8201d16240f948a4ea7dd9f646f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  path: {fileID: 0}
 --- !u!1 &8768704760074849686
 GameObject:
   m_ObjectHideFlags: 0

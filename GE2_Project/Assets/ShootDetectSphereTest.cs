@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootDetect : MonoBehaviour
+public class ShootDetectSphereTest : MonoBehaviour
 {
 
     private float timeBtwShot;
@@ -17,6 +17,14 @@ public class ShootDetect : MonoBehaviour
 
     public string nameTag;
 
+    public float radius;
+    public float maxDistance;
+    public LayerMask layerMask;
+
+    private Vector3 origin;
+    private Vector3 direction;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,21 +35,39 @@ public class ShootDetect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        origin = transform.position;
+        direction = transform.forward;
         RaycastHit hit;
-        Ray enemyCheck = new Ray(this.transform.position, this.transform.forward);
+        /*Ray enemyCheck = new Ray(this.transform.position, this.transform.forward);
 
         Debug.DrawRay(this.transform.position, this.transform.forward * rayLength, Color.green);
 
         if (Physics.Raycast(enemyCheck, out hit, rayLength)) //Draw raycast
         {
-            //Debug.Log(hit.transform.name);
+            Debug.Log(hit.transform.name);
+            if (hit.collider.tag == nameTag) // If it hits an object with tag "Wall"
+            {
+                SpawnProjectile();
+                //Debug.Log("Ray Hit!");
+            }
+        }*/
+
+        if(Physics.SphereCast(origin, radius, direction, out hit, maxDistance, layerMask, QueryTriggerInteraction.UseGlobal))
+        {
+            Debug.Log(hit.transform.name);
             if (hit.collider.tag == nameTag) // If it hits an object with tag "Wall"
             {
                 SpawnProjectile();
                 //Debug.Log("Ray Hit!");
             }
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Debug.DrawLine(origin, origin + direction * maxDistance);
+        Gizmos.DrawWireSphere(origin + direction * maxDistance, radius);
     }
 
     public void SpawnProjectile()
