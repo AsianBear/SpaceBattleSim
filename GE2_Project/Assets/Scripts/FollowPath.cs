@@ -6,6 +6,7 @@ using UnityEngine;
 public class FollowPath : SteeringBehaviour {
 
     public Path path;
+    public float arriveForce = 10f;
 
     Vector3 nextWaypoint;
 
@@ -33,7 +34,7 @@ public class FollowPath : SteeringBehaviour {
 
         if (!path.looped && path.IsLast())
         {
-            return boid.ArriveForce(nextWaypoint, 10);
+            return boid.ArriveForce(nextWaypoint, arriveForce);
         }
         else
         {

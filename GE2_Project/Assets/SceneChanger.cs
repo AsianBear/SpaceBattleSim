@@ -8,19 +8,27 @@ public class SceneChanger : MonoBehaviour
 
     public Animator anim;
     private int sceneToLoad;
+    public float time = 3.0f;
+    //private string tag;
     // Start is called before the first frame update
     void Start()
     {
-        
+        //tag = gameObject.GetComponent<ShootDetectSphereTest>().nameTag;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButton(0))
+        /*if(Input.GetMouseButton(0))
         {
             FadeToNextScene();
-        }
+        }*/
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Ship Hitted me");
+        Invoke("FadeToNextScene", time);
     }
 
     public void FadeToNextScene()

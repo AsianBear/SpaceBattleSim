@@ -13,7 +13,13 @@ public class TakeDmg : MonoBehaviour
         if(health <= 0)
         {
             Debug.Log("Dead");
-          //Destroy(this.gameObject);
+            if(this.gameObject.name == "VillianFrigate")
+            {
+                Debug.Log("SceneChangeActive");
+                //GetComponent<SceneChanger>().Invoke("FadeToNextScene", 0.1f);
+                gameObject.GetComponent<SceneChanger>().FadeToNextScene();
+                //Death();
+            }
             Death();
         }
     }
