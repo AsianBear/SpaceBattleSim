@@ -17,7 +17,7 @@ public class TakeDmg : MonoBehaviour
             {
                 Debug.Log("SceneChangeActive");
                 //GetComponent<SceneChanger>().Invoke("FadeToNextScene", 0.1f);
-                gameObject.GetComponent<SceneChanger>().FadeToNextScene();
+                FindObjectOfType<SceneChanger>().FadeToNextScene();
                 //Death();
             }
             Death();
