@@ -6,6 +6,8 @@ public class CameraAutoSwitch : MonoBehaviour
 {
     public Camera[] cameras;
     private int currentCameraIndex;
+    public float startInvokeAt = 10f;
+    public float repeatInvokeAfter = 15f;
 
     // Use this for initialization
     void Start()
@@ -25,7 +27,7 @@ public class CameraAutoSwitch : MonoBehaviour
             Debug.Log("Camera with name: " + cameras[0].name + ", is now enabled");
         }
 
-        InvokeRepeating("SwitchCamera", 10f, 15f);
+        InvokeRepeating("SwitchCamera", startInvokeAt, repeatInvokeAfter);
     }
 
     // Update is called once per frame
