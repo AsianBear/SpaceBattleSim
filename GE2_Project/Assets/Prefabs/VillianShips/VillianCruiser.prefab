@@ -416,8 +416,9 @@ GameObject:
   - component: {fileID: 8287243260006968801}
   - component: {fileID: 3075655679030648054}
   - component: {fileID: 8731941712733476757}
-  - component: {fileID: 1113061966692475266}
   - component: {fileID: 2927798064397833197}
+  - component: {fileID: 7153148421785983339}
+  - component: {fileID: 2635460090773430171}
   m_Layer: 0
   m_Name: VillianCruiser
   m_TagString: Enemy
@@ -479,24 +480,6 @@ MonoBehaviour:
   banking: 0.1
   maxSpeed: 10
   maxForce: 20
---- !u!114 &1113061966692475266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8287243260006543809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8646c5d5c892e1f4d8e09cbf6bbe0f1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 1
-  force: {x: 0, y: 0, z: 0}
-  boid: {fileID: 0}
-  distance: 25
-  radius: 10
-  jitter: 100
 --- !u!114 &2927798064397833197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -510,6 +493,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+--- !u!114 &7153148421785983339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8287243260006543809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27f8201d16240f948a4ea7dd9f646f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  path: {fileID: 0}
+  arriveForce: 10
+--- !u!114 &2635460090773430171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8287243260006543809}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a2c0bcf33ddd54f8f08233f492f579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  target: {fileID: 0}
 --- !u!1 &8287243260006543811
 GameObject:
   m_ObjectHideFlags: 0

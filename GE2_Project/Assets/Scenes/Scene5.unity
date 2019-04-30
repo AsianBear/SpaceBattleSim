@@ -588,6 +588,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carrier04
       objectReference: {fileID: 0}
+    - target: {fileID: 8274873701517981592, guid: 976e87d71b8720649848b5a9270afc52,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 976e87d71b8720649848b5a9270afc52,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -657,11 +662,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8274873701517981592, guid: 976e87d71b8720649848b5a9270afc52,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 976e87d71b8720649848b5a9270afc52, type: 3}
@@ -1286,11 +1286,11 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 10000
+  far clip plane: 3000
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2723,6 +2723,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carrier04
       objectReference: {fileID: 0}
+    - target: {fileID: 8274873701517981592, guid: 976e87d71b8720649848b5a9270afc52,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 976e87d71b8720649848b5a9270afc52,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2792,11 +2797,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8274873701517981592, guid: 976e87d71b8720649848b5a9270afc52,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 976e87d71b8720649848b5a9270afc52, type: 3}
@@ -2844,6 +2844,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carrier04
       objectReference: {fileID: 0}
+    - target: {fileID: 8274873701517981592, guid: 976e87d71b8720649848b5a9270afc52,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 976e87d71b8720649848b5a9270afc52,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2913,11 +2918,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8274873701517981592, guid: 976e87d71b8720649848b5a9270afc52,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 976e87d71b8720649848b5a9270afc52, type: 3}

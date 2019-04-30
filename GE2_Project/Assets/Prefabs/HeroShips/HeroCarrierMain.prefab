@@ -3205,6 +3205,7 @@ GameObject:
   - component: {fileID: 2322895518165740742}
   - component: {fileID: 8746949948183775121}
   - component: {fileID: 8746949948183775119}
+  - component: {fileID: 3477373803850380943}
   m_Layer: 0
   m_Name: HeroCarrierMain
   m_TagString: Untagged
@@ -3321,6 +3322,23 @@ MonoBehaviour:
   banking: 0.1
   maxSpeed: 10
   maxForce: 20
+--- !u!114 &3477373803850380943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8746949948183775116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27f8201d16240f948a4ea7dd9f646f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  path: {fileID: 0}
+  arriveForce: 10
 --- !u!1 &8746949948183775118
 GameObject:
   m_ObjectHideFlags: 0
