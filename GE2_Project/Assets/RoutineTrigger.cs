@@ -25,9 +25,9 @@ public class RoutineTrigger : MonoBehaviour
         portal.SetActive(true);
         yield return new WaitForSeconds(2f);
         ships.SetActive(true);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(7f);
         portal.SetActive(false);
-        yield return new WaitForSeconds(2.1f);
+        yield return new WaitForSeconds(.1f);
         chargeFX.SetActive(true);
         electricFX.SetActive(true);
         yield return new WaitForSeconds(7.5f);
