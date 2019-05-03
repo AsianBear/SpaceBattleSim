@@ -34,9 +34,11 @@ public class RoutineTrigger : MonoBehaviour
         chargeFX.SetActive(false);
         electricFX.SetActive(false);
         chargeFinished.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
         chargeFinished.SetActive(false);
         lazer.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        FindObjectOfType<SceneChanger>().FadeToNextScene();
     }
 
     void DestroyThis()
@@ -45,10 +47,11 @@ public class RoutineTrigger : MonoBehaviour
         Destroy(ships.gameObject);
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Projectile"))
+        if(other.CompareTag("Projectile"))
         {
+            Debug.Log("Laser Hit!");
             DestroyThis();
             smallExplosion.SetActive(true);
         }
