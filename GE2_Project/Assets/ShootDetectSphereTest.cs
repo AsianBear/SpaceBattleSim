@@ -78,8 +78,16 @@ public class ShootDetectSphereTest : MonoBehaviour
         {
             //Vector3 projectileSpawn = gameObject.transform.position + gameObject.transform.forward;
             //InvokeRepeating("SpawnProjectile", 3, 0);
+            GameObject Spawn;
+            Spawn = Instantiate(projectile, transform.position, transform.rotation) as GameObject;
 
-            if(shots > 0)
+            Rigidbody tempRigidbody;
+            tempRigidbody = Spawn.GetComponent<Rigidbody>();
+
+            tempRigidbody.AddForce(transform.forward * force); //May need to get rid of Time.DeltaTime
+            Destroy(Spawn, 10.0f);
+
+            /*if (shots > 0)
             {
                 GameObject Spawn;
                 Spawn = Instantiate(projectile, transform.position, transform.rotation) as GameObject;
@@ -95,7 +103,7 @@ public class ShootDetectSphereTest : MonoBehaviour
             else
             {
                 shots = numberOfShots;
-            }
+            }*/
 
             timeBtwShot = startTimeBtwShots;
         }

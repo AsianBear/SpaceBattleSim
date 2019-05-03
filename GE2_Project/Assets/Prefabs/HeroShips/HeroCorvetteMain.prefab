@@ -1202,16 +1202,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7424128016254240613, guid: 2844f259194403b419f740f3c108ba98,
+        type: 3}
+      propertyPath: startTimeBtwShots
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3054776129910474020, guid: 2844f259194403b419f740f3c108ba98,
         type: 3}
       propertyPath: projectile
       value: 
       objectReference: {fileID: 5620856151635040550, guid: ccd95628a59c294418e5bba8df6efdbf,
         type: 3}
-    - target: {fileID: 7424128016254240613, guid: 2844f259194403b419f740f3c108ba98,
+    - target: {fileID: 3054776129910474020, guid: 2844f259194403b419f740f3c108ba98,
         type: 3}
-      propertyPath: startTimeBtwShots
-      value: 0.5
+      propertyPath: radius
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3054776129910474020, guid: 2844f259194403b419f740f3c108ba98,
+        type: 3}
+      propertyPath: maxDistance
+      value: 27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2844f259194403b419f740f3c108ba98, type: 3}
