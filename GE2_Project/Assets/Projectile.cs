@@ -5,6 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float damage = 10f;
+    public GameObject explosionFX;
 
     public void OnCollisionEnter(Collision other)
     {
@@ -18,4 +19,13 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject);
     }
 
+    private void FixedUpdate()
+    {
+        Invoke("playFX", 3f);
+    }
+
+    void playFX()
+    {
+        explosionFX.SetActive(true);
+    }
 }

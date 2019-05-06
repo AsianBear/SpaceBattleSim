@@ -6,10 +6,12 @@ public class TriggerSpawn : MonoBehaviour
 {
     public GameObject portal;
     public GameObject[] ships;
+    public AudioSource portalSource;
+    public AudioClip portalClip;
     // Start is called before the first frame update
     void Start()
     {
-        
+        portalSource.clip = portalClip;
     }
 
     // Update is called once per frame
@@ -21,6 +23,7 @@ public class TriggerSpawn : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         portal.SetActive(true);
+        portalSource.Play();
         StartCoroutine(TriggerSequence());
     }
 
@@ -38,6 +41,7 @@ public class TriggerSpawn : MonoBehaviour
         DestroyList();
         yield return new WaitForSeconds(1.5f);
         portal.SetActive(false);
+        portalSource.Stop();
         yield return new WaitForSeconds(.5f);
         FindObjectOfType<SceneChanger>().FadeToNextScene();
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShootDetectSphereTest : MonoBehaviour
 {
 
-    private float timeBtwShot;
+    public float timeBtwShot;
     public float startTimeBtwShots;
     private float shots;
     public float numberOfShots;
@@ -24,12 +24,16 @@ public class ShootDetectSphereTest : MonoBehaviour
     private Vector3 origin;
     private Vector3 direction;
 
+    public AudioClip clip;
+    public AudioSource source;
+
 
     // Start is called before the first frame update
     void Start()
     {
         timeBtwShot = 0f;
         shots = numberOfShots;
+        source.clip = clip;
     }
 
     // Update is called once per frame
@@ -61,6 +65,19 @@ public class ShootDetectSphereTest : MonoBehaviour
                 //Debug.Log("Ray Hit!");
             }
         }
+        /*else
+        {
+            if(shots > 0)
+            {
+                Invoke("laserBullet", 5f);
+                shots -= 1f;
+            }
+            else
+            {
+                shots = numberOfShots;
+            }
+            
+        }*/
     }
 
     private void OnDrawGizmosSelected()
@@ -78,14 +95,7 @@ public class ShootDetectSphereTest : MonoBehaviour
         {
             //Vector3 projectileSpawn = gameObject.transform.position + gameObject.transform.forward;
             //InvokeRepeating("SpawnProjectile", 3, 0);
-            GameObject Spawn;
-            Spawn = Instantiate(projectile, transform.position, transform.rotation) as GameObject;
-
-            Rigidbody tempRigidbody;
-            tempRigidbody = Spawn.GetComponent<Rigidbody>();
-
-            tempRigidbody.AddForce(transform.forward * force); //May need to get rid of Time.DeltaTime
-            Destroy(Spawn, 10.0f);
+            laserBullet();
 
             /*if (shots > 0)
             {
@@ -110,6 +120,20 @@ public class ShootDetectSphereTest : MonoBehaviour
         else
         {
             timeBtwShot -= Time.deltaTime;
+            //source.Stop();
         }
+    }
+
+    private void laserBullet()
+    {
+        GameObject Spawn;
+        Spawn = Instantiate(projectile, transform.position, transform.rotation) as GameObject;
+
+        Rigidbody tempRigidbody;
+        tempRigidbody = Spawn.GetComponent<Rigidbody>();
+
+        tempRigidbody.AddForce(transform.forward * force); //May need to get rid of Time.DeltaTime
+        source.Play();
+        Destroy(Spawn, 10.0f);
     }
 }

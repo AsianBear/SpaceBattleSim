@@ -6,12 +6,19 @@ public class TakeDmg : MonoBehaviour
 {
 
     public float health = 30f;
+    public GameObject explosion;
+    public GameObject sparks;
+    public AudioSource exploSource;
+    public AudioClip exploClip;
 
     public void TakeDamage(float amount)
     {
         health -= amount;
+        sparks.SetActive(true);
         if(health <= 0)
         {
+            explosion.SetActive(true);
+            exploSource.Play();
             Debug.Log("Dead");
             if(this.gameObject.name == "VillianFrigate")
             {
@@ -32,7 +39,7 @@ public class TakeDmg : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        exploSource.clip = exploClip;
     }
 
     // Update is called once per frame

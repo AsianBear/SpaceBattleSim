@@ -316,6 +316,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 60
+  explosion: {fileID: 7724699269858871429, guid: 554c06876587c5a488b949d48c187c6c,
+    type: 3}
+  exploSource: {fileID: 1530827291754985182, guid: 554c06876587c5a488b949d48c187c6c,
+    type: 3}
+  exploClip: {fileID: 8300000, guid: af5641c7e63e34e459e6cb935e58d7d6, type: 3}
 --- !u!1 &6026090326109060315
 GameObject:
   m_ObjectHideFlags: 0
