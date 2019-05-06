@@ -10,11 +10,14 @@ public class TakeDmg : MonoBehaviour
     public GameObject sparks;
     public AudioSource exploSource;
     public AudioClip exploClip;
+    public AudioSource sparkSource;
+    public AudioClip sparkClip;
 
     public void TakeDamage(float amount)
     {
         health -= amount;
         sparks.SetActive(true);
+        sparkSource.Play();
         if(health <= 0)
         {
             explosion.SetActive(true);
@@ -27,7 +30,7 @@ public class TakeDmg : MonoBehaviour
                 FindObjectOfType<SceneChanger>().FadeToNextScene();
                 //Death();
             }
-            Death();
+            Invoke("Death", 1f);
         }
     }
 
@@ -40,6 +43,7 @@ public class TakeDmg : MonoBehaviour
     void Start()
     {
         exploSource.clip = exploClip;
+        sparkSource.clip = sparkClip;
     }
 
     // Update is called once per frame
