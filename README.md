@@ -61,7 +61,7 @@ The scripts that I'm most proud of are the CameraAutoSwitch, the TakeDmg and the
 
 ## Youtube Video of the project
 
-[![IMAGE ALT TEXT HERE](http://img.youtu.be/SGVkQizMohc/0.jpg)](https://youtu.be/SGVkQizMohc)
+[![IMAGE ALT TEXT HERE](https://i9.ytimg.com/vi/SGVkQizMohc/mq2.jpg?sqp=COjCx-YF&rs=AOn4CLBt-W3VkIunRa9Rr4S1MfOh8CTLOw)](https://youtu.be/SGVkQizMohc)
 
 ## Storyboard:
 Scene 1:
