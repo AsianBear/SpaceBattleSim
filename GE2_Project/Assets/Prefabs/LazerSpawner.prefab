@@ -64,11 +64,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c4dbac93510644bb2573592d23f22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBtwShot: 0
   startTimeBtwShots: 0.5
   numberOfShots: 3
   projectile: {fileID: 5620856151635040550, guid: 8b37197eb921f7443b045009f86317b8,
     type: 3}
-  force: 3000
+  force: 4000
   rayLength: 0
   nameTag: 
   radius: 5
