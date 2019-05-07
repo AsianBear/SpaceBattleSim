@@ -5,10 +5,26 @@ Name: Pasin Tipprasert
 Student ID: C16347416
 
 # Project Description
-A repo for GE2 project. A creation of a Sci-Fi spaceship battle sequence.
+A repo for GE2 project. A creation of a Sci-Fi spaceship battle sequence. The battle depicted is not based on any Sci-Fi film, it is from myu own imagination. This project is done as a part of Game Engine 2 assignment for DT508 Game Design course in TU Dublin.
 
 # Instructions & How it Works
+To observe/play the project, clone the master branch, open Unity preferably of version 2019.1.0f2 as it was the version this project is built on.
 
+After the project is opened, navigate to the Scenes folder and open up Scene1. Click the play button and enjoy the show!
+
+How this whole project:
+
+From Scene1 - The Camera have a script that make it look at the main spaceship moving towards it, avoding their Carrier ship by going upward. Once it hit a cetain point near a sawrm of asteroids, it triggers another script which will switch from Scene1 to Scene2.
+
+Scene 2 - This is where the main battle comes in. It is 'automated' to a certain extend. The ships are setted up in a battlefield, flying and shooting at each other, sparks/small explosion will happen when the ship gets hit. The Carrier Ships from both sides (Hero vs Villian) will circle around the vicinity, the Cameras will switch between each other in a loop, looking at the main fight sequence between Hero Covette and Villian Frigate Ships. Once the main Villian Frigate ship got destroy, an explosion will occur and the Scene will fades to Scene3. The time of the fights varies due to missing lazer shots and behaviours.
+
+Scene3 - This is when the Villian troops retreats. Turning around and go through a portal that is essentially a wormhole/space vortex. This will then transitions into Scene4 once all the ships disappear.
+
+Scene4 - This scene shows the Villian troop reappear back in another part of space and being ambushed by the Main Hero troop with an energy cannon. The camera switches and shows the Energy Cannon being charged with VFX, then it fired at the Villian troop, decimating them with a huge explosion effects. Then the Scene will switch to Scene5.
+
+Scene5 - This scene is the final Scene, showing troops of Villians with multiple of their Energy Cannons and their Mother ships slowly approaching the Main Hero Base. Then the Scene will fade to black and switch to Scene6.
+
+Scene6 - This is just a scene that have a message of how to replay the game by pressing the 'R' button.
 
 # Most Proud Aspects
 
