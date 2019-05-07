@@ -1,5 +1,16 @@
 # SpaceBattleSim
+
+Name: Pasin Tipprasert
+Student ID: C16347416
+
+# Project Description
 A repo for GE2 project. A creation of a Sci-Fi spaceship battle sequence.
+
+# Instructions & How it Works
+
+
+# Most Proud Aspects
+
 
 ## Storyboard:
 Scene 1:
