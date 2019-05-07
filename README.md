@@ -27,7 +27,14 @@ Scene5 - This scene is the final Scene, showing troops of Villians with multiple
 Scene6 - This is just a scene that have a message of how to replay the game by pressing the 'R' button.
 
 # Most Proud Aspects
+Most proud aspect in this project would be the custom shader I've learned and created. The custom shader is used on the Space Portal effects as due to Unity version 2019.1.0f2 does not allow me to use HDRP and Shader graph packages weithout ruining every textures and materials in the project, and they will always reverted to corruupted pink textures even after several attempts at Manual material selection updates.
 
+However, I found a blog discussing about how to create a custom shader, and learn how to create and implemnet one myself. 
+[Image]
+
+The other Visual Effects are also done by me.
+
+The scripts that I'm most proud of are the CameraAutoSwitch, the TakeDmg and the ShootDetectSphereTest scripts. These scripts I've coded myself with helps from Unity forums and friends.
 
 ## Storyboard:
 Scene 1:
